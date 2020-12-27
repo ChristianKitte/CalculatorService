@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["HelloWorldService/CalculatorService.csproj", "HelloWorldService/"]
-RUN dotnet restore "HelloWorldService/CalculatorService.csproj"
+COPY ["CalculatorService/CalculatorService.csproj", "CalculatorService/"]
+RUN dotnet restore "CalculatorService/CalculatorService.csproj"
 COPY . .
-WORKDIR "/src/HelloWorldService"
+WORKDIR "/src/CalculatorService"
 RUN dotnet build "CalculatorService.csproj" -c Release -o /app/build
 
 FROM build AS publish
