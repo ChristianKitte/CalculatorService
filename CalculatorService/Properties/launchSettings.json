@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "helloworld",
+      "launchUrl": "calculator",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "HelloWorldService": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "helloworld",
+      "launchUrl": "calculator",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
@@ -30,7 +30,7 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/helloworld",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/calculator",
       "publishAllPorts": true,
       "useSSL": true
     }
